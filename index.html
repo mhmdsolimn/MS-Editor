@@ -1,0 +1,101 @@
+<!-- =====================================================" Made With ❤ By Mohamed Soliman "===================================================== -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MS Editor</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+  </head>
+  <body>
+    <!-- <div class="intro" oncontextmenu="return false">
+      <div class="intro-content">
+        <img src="img/logo.png">
+        <button onclick="Intro()" id="introBtn">Continue</button>
+        <div id="introLoadDiv">
+          <progress id="introLoad" value="0" max="100"></progress>
+          <span><span id="introLoadVal">0</span> %</span>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="textEditor" oncontextmenu="return false">
+      <nav>
+        <div class="left">
+          <div>
+            <!-- <img src="img/logo.png"> -->
+            <h1><span>MS</span> Editor</h1>
+            <ul id="MobileList">
+              <li onclick="Clear()">Clear</li>
+              <li onclick="AutoSave()" id="autoSave" class="Asave">Auto Save</li>
+              <li onclick="Save()" id="saveBtn">Save</li>
+              <li onclick="run()">Run</li>
+            </ul>
+
+            <p onclick="OpenBanner()" class="openBanner">➡</p>
+          </div>
+
+          <i onclick="OpenMobileList()" class="fas fa-bars"></i>
+        </div>
+  
+        <div class="middle">
+          <input onkeyup="Search()" id="search-input" autocomplete="off" type="text" placeholder="🔎 Search">
+
+          <ul id="List">
+            <li onclick="OpenHtml()" class="li-search"><p>index.html</p></li>
+            <li onclick="OpenCss()" class="li-search"><p>style.css</p></li>
+            <li onclick="OpenJs()" class="li-search"><p>main.js</p></li>
+          </ul>
+        </div>
+      </nav>
+  
+      <div class="body">
+        <div class="control">
+          <div class="top">
+            <h2>Explore</h2>
+            <h3 onclick="closeBanner()">⬅</h3>
+          </div>
+  
+          <div class="content">
+            <div class="files">
+              <ul>
+                <li onclick="OpenHtml()" id="htmlBtn" class="active"><span>↪</span><i class="fab fa-html5"></i> index.html</li>
+                <li onclick="OpenCss()" id="cssBtn"><span>↪</span><i class="fab fa-css3"></i> style.css</li>
+                <li onclick="OpenJs()" id="jsBtn"><span>↪</span><i class="fab fa-js-square"></i> main.js</li>
+                <li><a target="_blank" href="https://fontawesome.com/v6/search?o=r&m=free"><span>↪</span><i class="fa-solid fa-font-awesome"></i> Font Awesome</a></li>
+              </ul>
+            </div>
+  
+            <div class="theme">
+              <select id="select">
+                <option>Choose The Theme</option>
+                <option id="theme1" value="light">Light Theme</option>
+                <option id="theme2" value="blue">Dark Blue Theme</option>
+                <option id="theme3" value="dark">Dark Theme</option>
+              </select>
+              <button onclick="themeUpdate()">Change</button>
+            </div>
+          </div>
+        </div>
+  
+        <textarea onkeyup="SaveMsg()" id="Editor"></textarea>
+        <textarea placeholder="Css" onkeyup="SaveMsg()" id="EditorCss"></textarea>
+        <textarea placeholder="Js" onkeyup="SaveMsg()" id="EditorJs"></textarea>
+      </div>
+    </div>
+
+    <div class="browser">
+      <nav oncontextmenu="return false">
+        <p onclick="Back()">◀ Back To Editor</p>
+      </nav>
+
+      <div id="result"></div>
+    </div>
+
+    <script src="Js/main.js"></script>
+  </body>
+</html>
+
+<!-- =====================================================" Made With ❤ By Mohamed Soliman "===================================================== -->
